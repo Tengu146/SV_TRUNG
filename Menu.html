@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Coffee</title>
+    <link rel="stylesheet" href="Menu.css">
+</head>
+<body>
+    <div class="mien">
+        <nav id="navigation" class="miencodinh">
+            <ul>
+              <li><a href="nhaps2.html">Home</a></li>
+              <li><a href="Menu.html">Menu</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <marquee  behavior="scroll" direction="left">
+            <img class="mienanh" src="Coffee1.jpg" alt="cf">
+            <img class="mienanh" src="Coffee2.jpg" alt="cf">
+            <img class="mienanh" src="Coffee3.jpg" alt="cf">
+            <img class="mienanh" src="Coffee4.jpg" alt="cf">
+            <img class="mienanh" src="Muffin.jpg" alt="cf">
+            <img class="mienanh" src="Brownie.jpg" alt="cf">
+            <img class="mienanh" src="milk.jpg" alt="cf">
+            
+        </marquee>
+    </main>
+    <div class="demuclon">
+        <h1 id="demuc">Menu   </h1>
+    </div>
+    <main class="thucdoncacloai">
+        <div id="menu">
+            <h1>Coffee</h1>
+            <ul>
+                <li class="item">
+                    <img src="Americano.jpg" alt="Americano">
+                    <span>Americano</span>
+                    <span>$2.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Americano')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="latte.jpg" alt="Latte">
+                    <span>Latte</span>
+                    <span>$3.00</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Latte')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Cappuccino.jpg" alt="Cappuccino">
+                    <span>Cappuccino</span>
+                    <span>$3.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cappuccino')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Espresso.jpg"Espresso">
+                    <span>Espresso</span>
+                    <span>$2.00</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Espresso')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="menu">
+            <h1>Coffee Ice</h1>
+            <ul>
+                <li class="item">
+                    <img src="Iced Americano.jpg" alt="Americano">
+                    <span> Ice Americano</span>
+                    <span>$2.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Americano')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Iced Milky Latte.jpg" alt="Latte">
+                    <span>Ice Latte</span>
+                    <span>$3.00</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Latte')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Iced Cappuccino.jpg" alt="Cappuccino">
+                    <span>Ice Cappuccino</span>
+                    <span>$3.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cappuccino')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Iced Espresso.jpg" alt="Espresso">
+                    <span>Ice Espresso</span>
+                    <span>$2.00</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Espresso')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="menu">
+            <h1>Cake</h1>
+            <ul>
+                <li class="item">
+                    <img src="cookies.jpg" alt="Cookie">
+                    <span>Cookie</span>
+                    <span>$1.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cookie')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="banhngot.jpg" alt="Cake">
+                    <span>Cake</span>
+                    <span>$2.00</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cake')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Muffin.jpg" alt="Muffin">
+                    <span>Muffin</span>
+                    <span>$2.50 </span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cookie')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Brownie.jpg" alt="Brownie">
+                    <span>Brownie</span>
+                    <span>$2.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cookie')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Bonglan.jpg" alt="Bonglan">
+                    <span>Sponge cake</span>
+                    <span>$1.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Cookie')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="menu">
+            <h1>Other</h1>
+            <ul>
+                <li class="item">
+                    <img src="kem.jpg" alt="Ice Cream">
+                    <span>Ice Cream</span>
+                    <span>$3.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Ice Cream')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="milk.jpg" alt="Milk">
+                    <span>Milk</span>
+                    <span>$0.50</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Milk')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="Syrup.jpg" alt="Syrup">
+                    <span>Syrup</span>
+                    <span>$0.75</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Syrup')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+                <li class="item">
+                    <img src="kemtuoi.jpg" alt="Whipped Cream">
+                    <span>Whipped Cream</span>
+                    <span>$1.00</span>
+                    <div class="order-container">
+                        <input type="number" class="quantity-input" placeholder="Số lượng">
+                        <button class="order-button" onclick="orderSuccess(this, 'Whipped Cream')">Order</button>
+                        <div class="order-success"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p class="left-section">Coffee1822 Open: 7:00am - 10:00pm</p>
+        <p class="right-section">gmail:Coffee2024@gmail.com</p>
+        <p class="center-section">© 2024. All Right Reserved. Coffee1822</p>
+    </footer>
+    <script>
+        function orderSuccess(button, productName) {
+            var quantityInput = button.parentElement.querySelector('.quantity-input');
+            var orderSuccessMessage = button.parentElement.querySelector('.order-success');
+
+            if (quantityInput.value.trim() === "") {
+                orderSuccessMessage.innerHTML = "Vui lòng nhập số lượng sản phẩm!";
+            } else {
+                var quantity = parseInt(quantityInput.value);
+                orderSuccessMessage.innerHTML = "Đã order thành công " + quantity + " " + productName;
+            }
+        }
+    </script>
+</body>
+</html>
